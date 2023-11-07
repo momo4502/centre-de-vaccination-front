@@ -10,6 +10,8 @@ import { MedecinComponent } from './Components/medecin/medecin.component';
 import { MenuComponent } from './Components/menu/menu.component';
 import { PatientComponent } from './Components/patient/patient.component';
 import { VaccinationComponent } from './Components/vaccination/vaccination.component';
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { VaccinationComponent } from './Components/vaccination/vaccination.compo
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule, 
+    FormsModule, 
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
