@@ -1,0 +1,5 @@
+enum StatutAdmin {
+    superAdmin,
+    adminClassique,
+
+}
