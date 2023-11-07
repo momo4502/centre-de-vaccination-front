@@ -5,5 +5,16 @@ import { Injectable } from '@angular/core';
 })
 export class AuthentificationService {
 
+  authentifie: boolean = false;
+
   constructor() { }
+
+  getAuthetifie(): boolean {
+    return this.authentifie; 
+  }
+
+  setAuthentifie(value: boolean): void {
+    this.authentifie = value;
+  }
+
 }
