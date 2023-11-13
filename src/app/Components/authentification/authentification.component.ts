@@ -26,16 +26,20 @@ export class AuthentificationComponent implements OnInit{
 
   onSubmit() {
     this.authentificationService.setAuthentifie(true);
-    this.router.navigate(['centres']);
+    if (this.submitButtonText === this.se_connecter) {
+      this.router.navigate(['centres']);
+    } else {
+      this.router.navigate(['create-patient']);
+    }
   }
 
   resetForm() {
     this.motDePasse = ''; 
       if (this.submitButtonText === this.se_connecter) {
         this.submitButtonText = this.creer_un_compte;
-    } else {
-      this.submitButtonText = this.se_connecter;
-    }
+      } else {
+        this.submitButtonText = this.se_connecter;
+      }
   }
 
 }

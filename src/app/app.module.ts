@@ -16,7 +16,9 @@ import { TableauDeBordComponent } from './Components/tableau-de-bord/tableau-de-
 import { MonCompteComponent } from './Components/mon-compte/mon-compte.component';
 import { PatientService } from './Services/PatientService/patient.service';
 import { HttpClientModule } from '@angular/common/http';
-import { SinglePatientComponent } from './Components/single-patient/single-patient.component';
+import { SinglePatientComponent } from './Components/Singles/single-patient/single-patient.component';
+import { MedecinCreateComponent } from './Components/Create/medecin-create/medecin-create.component';
+import { PatientCreateComponent } from './Components/Create/patient-create/patient-create.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { SinglePatientComponent } from './Components/single-patient/single-patie
     VaccinationComponent,
     TableauDeBordComponent,
     MonCompteComponent,
-    SinglePatientComponent
+    SinglePatientComponent,
+    MedecinCreateComponent,
+    PatientCreateComponent
   ],
   imports: [
     BrowserModule,
