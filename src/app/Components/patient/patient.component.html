@@ -1,1 +1,35 @@
-<p>patient works!</p>
+<app-menu></app-menu>
+<div *ngIf="patients">
+    <h2>Liste des Patients</h2>
+    <div class="search-filter-container">
+        <input type="text" [(ngModel)]="searchTerm" placeholder="Rechercher par nom ou prénom" />
+        <button (click)="filterPatients()">Filtrer</button>
+        <button (click)="DisplayAllPatients()">Tout afficher</button>
+    </div>
+    <div class="patient-container">
+      <div *ngFor="let patient of filteredPatients" class="patient-card" (click)="goToSinglePatient(patient.id)">
+        <div class="patient-info">
+          <div class="info-label">Nom:</div>
+          <div class="info-value">{{ patient.nom }}</div>
+        </div>
+        <div class="patient-info">
+          <div class="info-label">Prénom:</div>
+          <div class="info-value">{{ patient.prenom }}</div>
+        </div>
+        <div class="patient-info">
+          <div class="info-label">Email:</div>
+          <div class="info-value">{{ patient.email }}</div>
+        </div>
+        <div class="patient-info">
+          <div class="info-label">Date d'Inscription:</div>
+          <div class="info-value">{{ patient.dateDInscription | date:'short' }}</div>
+        </div>
+        <div class="patient-info">
+          <div class="info-label">Téléphone:</div>
+          <div class="info-value">{{ patient.telephone }}</div>
+        </div>
+      </div>
+    </div>
+</div>
+  
+  
