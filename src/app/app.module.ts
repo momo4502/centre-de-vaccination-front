@@ -12,6 +12,11 @@ import { PatientComponent } from './Components/patient/patient.component';
 import { VaccinationComponent } from './Components/vaccination/vaccination.component';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { TableauDeBordComponent } from './Components/tableau-de-bord/tableau-de-bord.component';
+import { MonCompteComponent } from './Components/mon-compte/mon-compte.component';
+import { PatientService } from './Services/PatientService/patient.service';
+import { HttpClientModule } from '@angular/common/http';
+import { SinglePatientComponent } from './Components/single-patient/single-patient.component';
 
 @NgModule({
   declarations: [
@@ -22,15 +27,19 @@ import { CommonModule } from '@angular/common';
     MedecinComponent,
     MenuComponent,
     PatientComponent,
-    VaccinationComponent
+    VaccinationComponent,
+    TableauDeBordComponent,
+    MonCompteComponent,
+    SinglePatientComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule, 
     FormsModule, 
-    CommonModule
+    CommonModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [PatientService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

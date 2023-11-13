@@ -1,9 +1,22 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { Patient } from 'src/app/Models/Patient';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PatientService {
 
-  constructor() { }
+  private apiUrl = 'http://localhost:8083/patients';
+
+  constructor(private http: HttpClient) { }
+
+  getPatients(): Observable<Patient[]> {
+    return this.http.get<Patient[]>(this.apiUrl + '/get');
+  }
+
+  getPatientById(patientId: number): Observable<Patient> {
+    return this.http.get<Patient>(this.apiUrl + '/get/' + patientId);
+  }
 }

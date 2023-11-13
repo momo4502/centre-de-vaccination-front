@@ -4,6 +4,7 @@ export class Patient {
     nom!: String;
     prenom!: String;
     email!: String;
+    dateDeNaissance!: Date;
     dateDInscription!: Date;
     telephone!: number;
 

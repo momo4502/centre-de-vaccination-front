@@ -1,0 +1,35 @@
+.h1_style {
+    text-align: center; // Centrer le texte horizontalement
+    background-color: #3498db; // Couleur de fond bleu
+    padding: 20px; // Marge intérieure
+    border-radius: 5px; // Coins arrondis
+    color: white; // Couleur du texte
+    font-size: 36px; // Taille de police
+    font-weight: bold; // Gras
+    text-transform: uppercase; // Majuscules
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); // Ombre du texte
+    margin: 0; // Supprimer la marge par défaut
+}
+.with-border {
+    border-right: 1px solid #000; /* Couleur de la bordure et largeur souhaitée */
+    padding-right: 10px; /* Ajoutez un peu d'espace entre le texte et la bordure */
+}
+
+/* Style additionnel pour le dernier élément sans bordure droite */
+.navbar-nav .nav-item:last-child.with-border {
+    border-right: none; /* Supprime la bordure droite pour le dernier élément */
+}
+.navbar-nav {
+    display: flex;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 10px; /* Ajoutez un peu d'espace entre les éléments du menu */
+}
+
+.navbar-nav .nav-item:last-child {
+    margin-right: 0; /* Ajuste l'espace pour le dernier élément */
+}
+
+
+  
