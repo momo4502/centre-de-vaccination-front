@@ -1,0 +1,33 @@
+<app-menu></app-menu>
+<div class="single-patient-container">
+    <h2>Détails du Patient</h2>
+    <div class="patient-card">
+        <div class="patient-info">
+            <div class="info-label">Nom:</div>
+            <div class="info-value">{{ patient.nom }}</div>
+        </div>
+        <div class="patient-info">
+            <div class="info-label">Prénom:</div>
+            <div class="info-value">{{ patient.prenom }}</div>
+        </div>
+        <div class="patient-info">
+            <div class="info-label">Email:</div>
+            <div class="info-value">{{ patient.email }}</div>
+        </div>
+        <div class="patient-info">
+            <div class="info-label">Date d'Inscription:</div>
+            <div class="info-value">{{ patient.dateDInscription | date:'short' }}</div>
+        </div>
+        <div class="patient-info">
+            <div class="info-label">Téléphone:</div>
+            <div class="info-value">{{ patient.telephone }}</div>
+        </div>
+    </div>
+  
+    <div class="patient-operations">
+      <button (click)="validerVaccination()">Valider la Vaccination</button>
+      <button (click)="supprimerPatient()">Supprimer le Patient</button>
+      <button (click)="goBack()">Retour</button>
+    </div>
+  </div>
+  

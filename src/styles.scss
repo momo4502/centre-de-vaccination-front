@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+.h1_style {
+    text-align: center; // Centrer le texte horizontalement
+    background-color: #3498db; // Couleur de fond bleu
+    padding: 20px; // Marge intérieure
+    border-radius: 5px; // Coins arrondis
+    color: white; // Couleur du texte
+    font-size: 36px; // Taille de police
+    font-weight: bold; // Gras
+    text-transform: uppercase; // Majuscules
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); // Ombre du texte
+    margin: 0; // Supprimer la marge par défaut
+}
