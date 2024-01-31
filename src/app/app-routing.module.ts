@@ -8,7 +8,7 @@ import { AdministrateurComponent } from './Components/administrateur/administrat
 import { TableauDeBordComponent } from './Components/tableau-de-bord/tableau-de-bord.component';
 import { MonCompteComponent } from './Components/mon-compte/mon-compte.component';
 import { SinglePatientComponent } from './Components/Singles/single-patient/single-patient.component';
-import { PatientCreateComponent } from './Components/Create/patient-create/patient-create.component';
+import { CreatePatientComponent } from './Components/Create/create-patient/create-patient.component';
 
 const routes: Routes = [
   { path: '', component: AuthentificationComponent },
@@ -20,7 +20,7 @@ const routes: Routes = [
   { path: 'tableau-de-bord', component: TableauDeBordComponent },
   { path: 'mon-compte', component: MonCompteComponent },
   { path: 'patients/:id', component: SinglePatientComponent},
-  { path: 'create-patient', component: PatientCreateComponent }
+  { path: 'create-patient', component: CreatePatientComponent}
 
 ];
 

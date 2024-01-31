@@ -1,3 +1,6 @@
+import { Adresse } from "./Adresse";
+import { Medecin } from "./Medecin";
+
 export class Patient {
 
     id!:number;
@@ -7,5 +10,7 @@ export class Patient {
     dateDeNaissance!: Date;
     dateDInscription!: Date;
     telephone!: number;
+    adresse!: Adresse;
+    docteur!: Medecin;
 
 }
