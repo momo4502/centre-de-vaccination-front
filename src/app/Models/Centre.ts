@@ -1,7 +1,8 @@
+import { Adresse } from "./Adresse";
+
 export class Centre {
 
     id!:number;
     nom!: String;
-    adresse!: String;
-    ville!: String;
+    adresse!: Adresse;
 }

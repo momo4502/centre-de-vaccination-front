@@ -1,2 +1,26 @@
 <app-menu></app-menu>
-<p>centre works!</p>
+<!-- <div *ngIf="medecins"> -->
+<div>
+    <h2>Liste des Centres</h2>
+    <div class="search-filter-container">
+        <input type="text" [(ngModel)]="searchTerm" placeholder="Rechercher par nom du centre" />
+        <button (click)="filterCentres()">Filtrer</button>
+        <button (click)="DisplayAllCentres()">Tout afficher</button>
+    </div>
+    <div class="centre-container">
+      <div *ngFor="let centre of filteredCentres" class="centre-card" (click)="goToSingleCentre(centre.id)">
+        <div class="centre-info">
+          <div class="info-label">Nom:</div>
+          <div class="info-value">{{ centre.nom }}</div>
+        </div>
+        <div class="centre-info">
+          <div class="info-label">Adresse:</div>
+          <div class="info-value">{{ centre.adresse.toString() }}</div>
+        </div>
+        <div class="centre-info">
+      </div>
+    </div>
+</div>
+  
+  
+

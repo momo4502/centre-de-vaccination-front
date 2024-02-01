@@ -1,3 +1,33 @@
 <app-menu></app-menu>
+<!-- <div *ngIf="medecins"> -->
+<div>
+    <h2>Liste des Medecins</h2>
+    <div class="search-filter-container">
+        <input type="text" [(ngModel)]="searchTerm" placeholder="Rechercher par nom ou prénom" />
+        <button (click)="filterMedecins()">Filtrer</button>
+        <button (click)="DisplayAllMedecins()">Tout afficher</button>
+    </div>
+    <div class="medecin-container">
+      <div *ngFor="let medecin of filteredMedecins" class="medecin-card" (click)="goToSingleMedecin(medecin.id)">
+        <div class="medecin-info">
+          <div class="info-label">Nom:</div>
+          <div class="info-value">{{ medecin.nom }}</div>
+        </div>
+        <div class="medecin-info">
+          <div class="info-label">Prénom:</div>
+          <div class="info-value">{{ medecin.prenom }}</div>
+        </div>
+        <div class="medecin-info">
+          <div class="info-label">Email:</div>
+          <div class="info-value">{{ medecin.email }}</div>
+        </div>
+        <div class="medecin-info">
+          <div class="info-label">Centre:</div>
+          <div class="info-value">{{ medecin.centre.nom }}</div>
+        </div>
+      </div>
+    </div>
+</div>
+  
+  
 
-<p>medecin works!</p>

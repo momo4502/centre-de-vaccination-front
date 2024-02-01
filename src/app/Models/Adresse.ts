@@ -9,4 +9,8 @@ export class Adresse {
     zip_code!: number;
     docteur!: Medecin;
     patient!: Patient;
+
+    toString(): String {
+        return this.zip_code + ' ' + this.rue + ' ' + this.ville; 
+    }
 }

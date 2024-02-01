@@ -19,8 +19,8 @@ const routes: Routes = [
   { path: 'admin', component: AdministrateurComponent },
   { path: 'tableau-de-bord', component: TableauDeBordComponent },
   { path: 'mon-compte', component: MonCompteComponent },
-  { path: 'patients/:id', component: SinglePatientComponent},
-  { path: 'create-patient', component: CreatePatientComponent}
+  { path: 'patients/:id', component: SinglePatientComponent },
+  { path: 'create-patient', component: CreatePatientComponent }
 
 ];
 
