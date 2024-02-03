@@ -1,2 +1,25 @@
 <app-menu></app-menu>
-<p>tableau-de-bord works!</p>
+<!-- Dashboard Header -->
+<div class="dashboard-header">
+    <h1>Tableau de Bord</h1>
+    <p>Bienvenue, {{ utilisateur.getNom() }}!</p>
+</div>
+
+<!-- Super Admin View -->
+<!-- <div *ngIf="utilisateur.statut === StatutAdmin.superAdmin">
+<app-gestion-centres></app-gestion-centres>
+<app-gestion-administrateurs></app-gestion-administrateurs>
+</div> -->
+
+<!-- Administrateur View -->
+<!-- <div *ngIf="utilisateur.statut === StatutAdmin.adminClassique">
+<app-gestion-medecins></app-gestion-medecins>
+<app-gestion-reservations></app-gestion-reservations>
+</div> -->
+
+<!-- Medecin View -->
+<!-- <div *ngIf="utilisateur.statut === StatutAdmin.medecin">
+<app-recherche-personne></app-recherche-personne>
+<app-valider-vaccination></app-valider-vaccination>
+</div> -->
+  

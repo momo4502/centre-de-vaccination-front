@@ -2,17 +2,17 @@ import { Administrateur } from "./Administrateur";
 import { Centre } from "./Centre";
 import { Medecin } from "./Medecin";
 import { Reservation } from "./Reservation";
+import { StatutAdmin } from "./StatutAdmin";
 
 
 export class AdministrateurCentre implements Administrateur {
     
     id!:number;
-    nom!: String;
-    prenom!: String;
-    email!: String;
-    statut!: StatutAdmin.adminClassique;
+    nom!: string;
+    prenom!: string;
+    email!: string;
+    statut!: StatutAdmin.administrateurCentre;
     centre!: Centre;
     medecins!: Medecin[];
-    reservations!: Reservation;
     
 }

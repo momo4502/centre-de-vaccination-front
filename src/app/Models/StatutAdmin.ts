@@ -1,5 +1,5 @@
-enum StatutAdmin {
+export enum StatutAdmin {
     superAdmin,
-    adminClassique,
+    administrateurCentre,
 
 }

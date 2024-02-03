@@ -1,4 +1,5 @@
 import { Centre } from "./Centre";
+import { StatutAdmin } from "./StatutAdmin";
 
 export interface Administrateur {
 
@@ -7,6 +8,5 @@ export interface Administrateur {
     prenom: String;
     email: String;
     statut: StatutAdmin;
-    centre: Centre;
 
 }

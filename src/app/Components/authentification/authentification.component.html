@@ -2,6 +2,18 @@
   <h2>Se connecter</h2>
   <form (ngSubmit)="onSubmit()">
     <div class="form-group">
+      <label for="statut">Vous êtes un :</label>
+      <select id="statut" [(ngModel)]="selectedStatut" name="statut" required>
+        <option *ngFor="let statut of statuts" [value]="statut">{{ statut }}</option>
+      </select>
+    </div>
+    <div *ngIf="selectedStatut === 'admin'" class="form-group">
+      <label for="adminType">Type d'administrateur :</label>
+      <select id="adminType" [(ngModel)]="selectedAdminType" name="adminType" required>
+        <option *ngFor="let typeAdmin of typesAdmin" [value]="typeAdmin">{{ typeAdmin }}</option>
+      </select>
+    </div>
+    <div class="form-group">
       <label for="email">Email :</label>
       <input type="email" id="email" [(ngModel)]="email" name="email" placeholder="Saisissez votre email" required>
     </div>

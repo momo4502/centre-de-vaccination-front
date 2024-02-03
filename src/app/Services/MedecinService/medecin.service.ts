@@ -19,4 +19,8 @@ export class MedecinService {
   getMedecinById(medecinId: number): Observable<Medecin> {
     return this.http.get<Medecin>(this.apiUrl + '/get/' + medecinId);
   }
+
+  getMedecinByEmail(email: string): Observable<Medecin> {
+    return this.http.get<Medecin>(this.apiUrl + '/getByEmail/' + email);
+  }
 }

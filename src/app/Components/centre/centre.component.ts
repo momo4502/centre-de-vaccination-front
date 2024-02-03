@@ -39,8 +39,14 @@ export class CentreComponent implements OnInit{
       return;
     }
 
-    this.filteredCentres = this.centres.filter(centre =>
-      (centre.nom && centre.nom.toLowerCase().includes(this.searchTerm.toLowerCase()))
+    this.filteredCentres = this.centres.filter(
+      (centre) =>
+        (centre.nom &&
+          centre.nom.toLowerCase().includes(this.searchTerm.toLowerCase())) ||
+        (centre.adresse &&
+          centre.adresse.ville
+            .toLowerCase()
+            .includes(this.searchTerm.toLowerCase()))
     );
   }
 

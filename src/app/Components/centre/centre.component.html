@@ -1,9 +1,9 @@
 <app-menu></app-menu>
-<!-- <div *ngIf="medecins"> -->
+<div *ngIf="centres">
 <div>
     <h2>Liste des Centres</h2>
     <div class="search-filter-container">
-        <input type="text" [(ngModel)]="searchTerm" placeholder="Rechercher par nom du centre" />
+        <input type="text" [(ngModel)]="searchTerm" placeholder="Rechercher par nom du centre ou nom d'une ville" />
         <button (click)="filterCentres()">Filtrer</button>
         <button (click)="DisplayAllCentres()">Tout afficher</button>
     </div>

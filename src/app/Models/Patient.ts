@@ -4,9 +4,9 @@ import { Medecin } from "./Medecin";
 export class Patient {
 
     id!:number;
-    nom!: String;
-    prenom!: String;
-    email!: String;
+    nom!: string;
+    prenom!: string;
+    email!: string;
     dateDeNaissance!: Date;
     dateDInscription!: Date;
     telephone!: number;
