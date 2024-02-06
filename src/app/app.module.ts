@@ -19,6 +19,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { SinglePatientComponent } from './Components/Singles/single-patient/single-patient.component';
 import { MedecinCreateComponent } from './Components/Create/medecin-create/medecin-create.component';
 import { CreatePatientComponent } from './Components/Create/create-patient/create-patient.component';
+import { SingleMedecinComponent } from './Components/Singles/single-medecin/single-medecin.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { CreatePatientComponent } from './Components/Create/create-patient/creat
     SinglePatientComponent,
     MedecinCreateComponent,
     CreatePatientComponent,
+    SingleMedecinComponent,
   ],
   imports: [
     BrowserModule,

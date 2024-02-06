@@ -21,7 +21,7 @@ export class SinglePatientComponent implements OnInit{
     this.route.paramMap.subscribe(params => {
       const idParam = params.get('id');
       if (idParam !== null) {
-        this.patientId = +idParam;
+        this.patientId =+ idParam;
         this.loadPatientDetails();
       }
     });
@@ -45,3 +45,4 @@ export class SinglePatientComponent implements OnInit{
     this.router.navigate(['patients']);
   }
 }
+
