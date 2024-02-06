@@ -13,7 +13,7 @@ export class MenuComponent implements OnInit {
 
   ngOnInit(): void {
     const userRole = this.authService.getUserRole();
-
+    console.log(userRole);
     switch (userRole) {
       case 'doctor':
         this.sections = [
@@ -44,5 +44,6 @@ export class MenuComponent implements OnInit {
         // Faites quelque chose pour gérer le cas où le rôle n'est pas défini
         break;
     }
+    console.log(this.sections);
   }
 }
